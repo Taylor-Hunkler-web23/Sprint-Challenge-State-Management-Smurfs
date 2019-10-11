@@ -1,9 +1,10 @@
 import React, {useEffect} from 'react'
 import { connect } from 'react-redux';
 import {fetchSmurf} from '../actions/index.js'
+import Smurf from './Smurf.js'
 
 const SmurfList = (props) => {
-
+console.log(props,"p")
     useEffect (() => {
         props.fetchSmurf();
     }, [])
@@ -13,8 +14,14 @@ const SmurfList = (props) => {
     }
 
     return(
-        <div>
-            <h1>List</h1>
+    
+           <div>
+            {props.error && <p>{props.error}</p>}
+      
+            {props.smurfs.map(smurf => (
+                <Smurf key={smurf.id} smurf={smurf} />
+    ))}
+
 
         </div>
     )
