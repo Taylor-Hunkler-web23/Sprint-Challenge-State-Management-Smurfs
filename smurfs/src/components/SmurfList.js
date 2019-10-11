@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import { connect } from 'react-redux';
 import {fetchSmurf} from '../actions/index.js'
 import Smurf from './Smurf.js'
+import Form from './Form.js'
 
 const SmurfList = (props) => {
 console.log(props,"p")
@@ -20,8 +21,9 @@ console.log(props,"p")
       
             {props.smurfs.map(smurf => (
                 <Smurf key={smurf.id} smurf={smurf} />
+               
     ))}
-
+            <Form/>
 
         </div>
     )
