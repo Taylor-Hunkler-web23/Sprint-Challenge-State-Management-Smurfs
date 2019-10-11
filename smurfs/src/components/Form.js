@@ -43,7 +43,7 @@ const Form = props => {
             />
             <input
                 name='height'
-                type='number'
+                type='text'
                 placeholder='Height'
                 onChange={handleChange}
 

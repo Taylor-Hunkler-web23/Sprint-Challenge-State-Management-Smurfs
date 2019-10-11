@@ -5,8 +5,8 @@ const Smurf = props => {
 
     return (
 
-        <div className="quote">
-            <h1>Smurfs</h1>
+        <div className="smurf">
+
             <h1>Name: {props.smurf.name}</h1>
             <h1>Age: {props.smurf.age}</h1>
             <h1>Height: {props.smurf.height}</h1>

@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background: hsla(30, 2%, 78%, 0.534);
+
 }
 
 .App-logo {
@@ -25,4 +27,17 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.smurflist{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.smurf{
+  background: rgba(0, 225, 255, 0.925); 
+  margin: 1rem;
+  padding: 1rem;
+  width: 40rem;
+  border: 3px solid black;
 }

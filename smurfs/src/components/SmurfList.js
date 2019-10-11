@@ -16,10 +16,10 @@ const SmurfList = (props) => {
 
     return (
 
-        <div>
+        <div className= 'smurflist'>
 
             {props.error && <p>{props.error}</p>}
-            
+
             <Form addSmurf={props.addSmurf} />
             {props.smurfs.map(smurf => (
                 <Smurf key={smurf.id} smurf={smurf} />
